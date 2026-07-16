@@ -11,25 +11,53 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
 }
+.section-heading {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding-right: 1rem;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3pt solid;
+    border-image: linear-gradient(90deg, #ff6565 0%,
+                                         #ff84ff 14%,
+                                         #7f7fff 29%,
+                                         #95fbff 43%,
+                                         #81ff81 57%,
+                                         #ffff72 71%,
+                                         #ffbc6a 100%) 1;
+}
 h2 {
     margin-top: 0;
     margin-bottom: 5px;
     padding-top: 0;
 }
+a {
+    text-decoration: none;
+    color: #fff;
+}
 .emphasis {
     font-family: 'Courier New', Courier, monospace;
-    background-color: hsla(240, 100%, 75%, 0.2);
-    border-radius: 5px;
-    padding: 3px;
-    padding-top: 1px;
+    color: #bfb1d3;
 }
 .hero-tag {
     font-family: monospace;
-    font-size: 32pt;
+    font-size: 30pt;
     margin-right: 0.5rem;
-    background-color: hsla(207, 100%, 75%, 0.2);
-    border-radius: 5px;
+    background-color: #80c6ff33;
+    border-radius: 1px;
     padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+.small-tag {
+    font-family: monospace;
+    font-size: 16pt;
+    margin-right: 0.1rem;
+    background-color: #80c6ff33;
+    border-radius: 1px;
+    padding: 5px;
     padding-top: 1px;
     padding-bottom: 2px;
 }
@@ -73,23 +101,23 @@ h2 {
 .header-item:hover {
     cursor: pointer;
     background-color: #4e435f;
-    border-radius: 0.5rem;
     transition: 0.25s;
+    transform: translateY(-3px);
 }
 .header-item.active {
     text-decoration: dashed;
 }
 .section {
     display: flex;
-    height: 400px;
+    height: 300px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: auto;
     gap: 1rem;
 }
 .section-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 30%;
+    max-width: 35%;
     font-size: 12pt;
 }
 .section-body p {
@@ -107,12 +135,12 @@ h2 {
     text-align: end;
 }
 .section-hero {
-    height: 100%;
+    height: inherit;
     width: 40%;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .section-hero.right {
     text-align: right;
@@ -122,7 +150,21 @@ h2 {
     max-width: 98%;
     width: auto;
     height: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     object-fit: contain;
     display: block;
     border-radius: 0.3rem;
+}
+
+.project-card {
+    display: flex;
+    padding: 0.5rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: #2b2436;
+    border-right: 3pt solid #5b4e6e;
+}
+.project-details {
+    align-content: end;
 }
