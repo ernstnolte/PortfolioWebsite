@@ -11,8 +11,27 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
 }
-img {
-    border-radius: 1rem;
+h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-top: 0;
+}
+.emphasis {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: hsla(240, 100%, 75%, 0.2);
+    border-radius: 5px;
+    padding: 3px;
+    padding-top: 1px;
+}
+.hero-tag {
+    font-family: monospace;
+    font-size: 32pt;
+    margin-right: 0.5rem;
+    background-color: hsla(207, 100%, 75%, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 2px;
 }
 .header {
     display: flex;
@@ -62,20 +81,48 @@ img {
 }
 .section {
     display: flex;
-    flex: 1;
-    width: auto;
-    height: 10%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 1rem;
 }
 .section-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 30%;
+    font-size: 12pt;
+}
+.section-body p {
+    text-align: justify;
+    text-justify: auto;
 }
 .section-body.left {
     justify-content: left;
+    padding-left: 0.5rem;
+    border-left: 3pt solid #5b4e6e;
 }
-.section-body.right {
-    justify-content: right;
+.section-body.right{
+    padding-right: 0.5rem;
+    border-right: 3pt solid #5b4e6e;
+    text-align: end;
 }
 .section-hero {
-    margin: auto;
-    border-radius: 0.5rem;
+    height: 100%;
+    width: 40%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-hero.right {
+    text-align: right;
+}
+.section-hero img {
+    max-height: 98%;
+    max-width: 98%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 0.3rem;
 }
