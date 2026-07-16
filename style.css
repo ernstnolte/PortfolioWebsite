@@ -11,6 +11,9 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
 }
+img {
+    border-radius: 1rem;
+}
 .header {
     display: flex;
     width: auto;
@@ -31,7 +34,7 @@ body {
                                          #95fbff 43%,
                                          #81ff81 57%,
                                          #ffff72 71%,
-                                         #ffbc6a 100%) 1 10%;
+                                         #ffbc6a 100%) 1;
     cursor: pointer;
 }
 .header-items {
@@ -61,6 +64,7 @@ body {
     display: flex;
     flex: 1;
     width: auto;
+    height: 10%;
 }
 .section-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -72,6 +76,6 @@ body {
     justify-content: right;
 }
 .section-hero {
+    margin: auto;
     border-radius: 0.5rem;
-    border-bottom: 0.1rem solid #5b4e6e;
 }
