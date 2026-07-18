@@ -64,7 +64,7 @@ a {
     align-items: center;
     font-family: monospace;
     font-size: clamp(0.8rem, 1.2vw, 16pt);
-    margin: 0 0.5rem 0.5rem 0;
+    margin: 0 0 0.5rem 0;
     background-color: #80c6ff33;
     border-radius: 1px;
     padding: 5px 8px 2px;
@@ -125,7 +125,7 @@ a {
     align-items: stretch;
     justify-content: center;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
     gap: 1rem;
 }
 .section-body {
@@ -178,12 +178,23 @@ a {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    width: 100%;
-    max-width: 15rem;
-    min-width: 15rem;
-    min-height: 15rem;
+    width: 15rem;
+    height: 20rem;
     background-color: #2b2436;
     border-right: 3pt solid #5b4e6e;
+}
+
+.project-cover {
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+.project-cover img {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    object-fit: scale-down;
 }
 .project-details {
     display: flex;
@@ -210,10 +221,9 @@ a {
     .section {
         align-items: flex-start;
     }
-    .project-card {
+    /* .project-card {
         min-width: 0;
-        max-width: 18rem;
-    }
+    } */
 }
 
 @media (max-width: 720px) {
@@ -241,9 +251,11 @@ a {
         font-size: 1.5rem;
         padding-right: 0.5rem;
     }
+    .section-hero img {
+        max-width: 300px;
+    }
     .project-card {
         border-right: none;
         border-bottom: 3pt solid #5b4e6e;
-        max-width: 100%;
     }
 }

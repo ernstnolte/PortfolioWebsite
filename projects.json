@@ -3,21 +3,21 @@
         "name": "Asset Location Manager",
         "tags": ["Python", "Django", "Web App", "SQL"],
         "year": 2026,
-        "coverImage": "media/images/webProfile.jpeg",
+        "coverImage": "images/assetLocation.png",
         "link": "https://github.com/ernstnolte/AssetLocationManager"
     },
     {
         "name": "PAWS ReachOut",
         "tags": ["C#", "WinForms", "SQL"],
         "year": 2025,
-        "coverImage": "media/images/paws.jpeg",
+        "coverImage": "images/paws.jpeg",
         "link": "https://github.com/ernstnolte/GroupProject-CMPG223-Group40"
     },
     {
         "name": "Router Simulator",
         "tags": ["C++", "CLI", "File Reader"],
         "year": 2024,
-        "coverImage": "media/images/routersim.jpeg",
+        "coverImage": "images/routersim.jpeg",
         "link": "https://github.com/ernstnolte/routersim"
     }
 ]

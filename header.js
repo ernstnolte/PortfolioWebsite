@@ -17,6 +17,6 @@ fetch('header.html')
     })
     // fallback case
     .catch(error => {
-        console.error('Error loading header element:', error);
+        console.error('Error loading header elements:', error);
         document.getElementById('header-container').innerHTML = '<div class="header"><span class="header-title">ERNST NoLTE</span></div>'
     })
