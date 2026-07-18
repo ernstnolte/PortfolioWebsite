@@ -69,6 +69,7 @@ a {
     border-radius: 1px;
     padding: 5px 8px 2px;
     white-space: nowrap;
+    line-height: 30px;
 }
 .header {
     display: flex;
@@ -174,6 +175,9 @@ a {
     display: block;
     border-radius: 0.3rem;
 }
+.section-hero p {
+    margin: 0;
+}
 .project-card {
     display: flex;
     flex-direction: column;
@@ -245,7 +249,6 @@ a {
     .hero-tag,
     .small-tag {
         font-size: clamp(0.85rem, 2.4vw, 1.1rem);
-        margin-right: 0.5rem;
     }
     .section-heading {
         font-size: 1.5rem;

@@ -7,8 +7,8 @@
         "link": "https://github.com/ernstnolte/AssetLocationManager"
     },
     {
-        "name": "PAWS ReachOut",
-        "tags": ["C#", "WinForms", "SQL"],
+        "name": "CMPG223 Group Project",
+        "tags": ["C#", "WinForms", "SQL", "SQLServer"],
         "year": 2025,
         "coverImage": "images/paws.jpeg",
         "link": "https://github.com/ernstnolte/GroupProject-CMPG223-Group40"
