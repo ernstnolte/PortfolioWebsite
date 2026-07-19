@@ -27,6 +27,10 @@ body {
     background-color: #1f1a27;
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
 }
 .section-heading {
     display: block;
