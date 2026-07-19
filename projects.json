@@ -17,7 +17,7 @@
         "name": "Router Simulator",
         "tags": ["C++", "CLI", "File Reader"],
         "year": 2024,
-        "coverImage": "images/routersim.jpeg",
+        "coverImage": "images/routersim.png",
         "link": "https://github.com/ernstnolte/routersim"
     }
 ]

@@ -215,7 +215,7 @@ a {
 
 .project-cover {
     width: 100%;
-    height: 180px;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
     margin-bottom: 1rem;
 }
@@ -244,18 +244,6 @@ a {
     flex-wrap: wrap;
     gap: 0.25rem;
     margin-top: 0.5rem;
-}
-
-.download-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.download-icon {
-    display: inline-block;
-    vertical-align: middle;
-    transition: transform 0.2s ease;
 }
 
 @media (max-width: 1100px) {
@@ -358,19 +346,13 @@ a {
     }
     
     .section {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto auto;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 2.5rem;
-        gap: 0.5rem;
+        gap: 1rem;
     }
     
     .section-body {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        max-width: 100%;
-        min-width: 0;
-        flex: none;
         width: 100%;
         font-size: 11pt;
     }
@@ -379,27 +361,50 @@ a {
     .section-body.right {
         border: none;
         border-left: 0.2rem solid #5b4e6e;
-        padding: 0;
-        padding-left: 0.5rem;
+        padding: 0 0 0 0.75rem;
         text-align: left;
     }
+
+    /* Isolated Mobile About Me Profile Configurations */
+    .section:first-of-type {
+        position: relative;
+        padding-top: 4rem;
+    }
+
+    .section:first-of-type h2 {
+        position: absolute;
+        top: 0;
+        left: 0.75rem;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .section:first-of-type .section-hero {
+        position: absolute !important;
+        display: inline-flex !important;
+        top: -4px;
+        left: 9.5rem;
+        width: auto;
+        min-width: 0;
+        max-width: none;
+    }
     
+    .section:first-of-type .section-hero img {
+        width: 45px;
+        height: 45px;
+        max-width: 45px;
+        max-height: 45px;
+        padding: 0;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1.5pt solid #5b4e6e;
+    }
+
+    /* Fallback properties for horizontal skill tickers */
     .section-hero {
         display: contents;
-    }
-    
-    .section-hero img {
-        grid-column: 1;
-        grid-row: 1;
-        max-width: 180px;
-        max-height: 180px;
-        padding: 0;
-        flex-shrink: 0;
-    }
-    
-    .section-hero.right {
-        text-align: left;
-        justify-content: flex-start;
     }
     
     .section-hero p {
@@ -439,15 +444,8 @@ a {
         font-size: 11pt;
         line-height: 1.5;
     }
-    .section-body {
-        order: 1;
-    }
-    
-    .section-hero {
-        order: 2;
-    }
 
-    /* Fixed Project Mobile Layout Rules */
+    /* Clean Project Mobile Layout Rules */
     #projects-container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -459,10 +457,6 @@ a {
         height: auto;
         border-right: none;
         border-bottom: 3pt solid #5b4e6e;
-    }
-    
-    .project-cover {
-        height: 200px;
     }
     
     .project-details h2 {
@@ -519,9 +513,5 @@ a {
     
     .project-card {
         width: 100%;
-    }
-    
-    .project-cover {
-        height: 160px;
     }
 }
