@@ -14,6 +14,13 @@ fetch('header.html')
                 item.classList.add('active');
             }
         });
+
+        const contactBtn = document.querySelector('.header-item:last-child');
+        contactBtn.style.cursor = 'pointer';
+        contactBtn.addEventListener('click', () => {
+            const footer = document.getElementById('footer-container');
+            footer.scrollIntoView({ behavior: 'smooth' });
+        });
     })
     // fallback case
     .catch(error => {
