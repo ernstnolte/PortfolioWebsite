@@ -179,13 +179,14 @@ a {
 }
 .section-hero img {
     width: 100%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 200px;
+    max-height: 200px;
     height: auto;
     padding: 0 0.5rem;
     object-fit: contain;
     display: block;
-    border-radius: 0.3rem;
+    align-self: center;
+    border-radius: 100%;
 }
 .section-hero p {
     margin: 0;
@@ -411,8 +412,6 @@ a {
         max-height: 45px;
         padding: 0;
         object-fit: cover;
-        border-radius: 50%;
-        border: 1.5pt solid #5b4e6e;
     }
 
     /* Fallback properties for horizontal skill tickers */
