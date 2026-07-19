@@ -3,6 +3,7 @@
 <head>
     <title>Ernst Nolte</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -10,13 +11,12 @@
     <div class="section">
         <span class="section-body right">
             <h2>About Me</h2>
-            <p>
-                Hi, I'm Ernst, a 3rd year <span class="emphasis">Information Technology</span> student at the North-West University. I abandoned the life of an <span class="emphasis">IT technician</span> to develop broader skills under the Information Technology umbrella. 
-            </p><p>
-                The past 3 years have been an exciting challenge. I learnt new <span class="emphasis">programming languages</span> (like C# and Java), <span class="emphasis">systems design</span>, <span class="emphasis">databse design</span>, and more.
-            </p><p>
-                I love being oudoors (where the fish are), staying active, and going out from time to time. When indoors, I enjoy cooking, working on my home lab, and the odd Dark Souls gaming session.
-            </p>
+            <h3 class="emphasis" style="margin-bottom: 3px;">Background:</h3>
+                <i>Resigned from an IT support and maintenance role in White River, Mpumalanga, to persue higher education</i>
+            <h3 class="emphasis" style="margin-bottom: 3px;">Education:</h3>
+                <i>BSc Information Technology 3rd year student at NWU Potchefstroom, with a strong academic record</i>
+            <h3 class="emphasis" style="margin-bottom: 3px;">Hobbies & Interests:</h3>
+                <i>Fishing, self-hosting, and exercise</i>
         </span>
         <span class="section-hero" style="width: fit-content;"><img src=".\images\webProfile.jpeg"></span>
     </div>
@@ -24,22 +24,28 @@
     <div class="section">
         <span class="section-hero right">
             <p>
-                <span class="small-tag">oop</span>
-                <span class="small-tag">sql</span>
-                <span class="small-tag">data_structures</span>
-                <span class="small-tag">visual_studio</span>
-                <span class="small-tag">database_design</span>
-                <span class="small-tag">database_design</span>
-                <span class="small-tag">database_design</span>
-                <span class="small-tag">linux_server</span>
-                <span class="small-tag">django</span>
+                <span class="hero-tag">oop</span>
+                <span class="hero-tag">sql</span>
+                <span class="hero-tag">data_structures</span>
+                <span class="hero-tag">visual_studio</span>
+                <span class="hero-tag">database_design</span>
+                <span class="hero-tag">python</span>
+                <span class="hero-tag">project_management</span>
+                <span class="hero-tag">css</span>
+                <span class="hero-tag">linux_server</span>
+                <span class="hero-tag">c++</span>
+                <span class="hero-tag">django</span>
+                <span class="hero-tag">cloudflare_tunnels</span>
             </p>
         </span>
         <span class="section-body left">
-            <h2>Software Skills</h2>
-            <p>
-                I'm Ernst, a 3rd year student studying <span class="emphasis">Information Technology</span> at the North-West University, on the Potchefstroom campus. I abandoned the life of an <span class="emphasis">IT technician</span> to further my studies and develop broader skills under the Information Technology umbrella. 
-            </p>
+            <h2>Skills</h2>
+            <h3 class="emphasis" style="margin-bottom: 3px;">Self-Taught Self-Hoster:</h3>
+                I host a home-server which runs a Jellyfin media server, Zabbix network monitor, and Pterodactyl game server. In the past I ran these through a CloudFlare tunnel with a custom domain, but this is down for the time being.
+            <h3 class="emphasis" style="margin-bottom: 3px;">Systems Design:</h3>
+                I acted as Project Lead for my Systems Analysis & Design project group, guiding a team of 6 towards final delivery of a successful product from design to implementation.
+            <h3 class="emphasis" style="margin-bottom: 3px;">Django:</h3>
+                Lately Django has been my go-to tech stack for personal projects, as it provides a configurable backend and servicable front-end.
         </span>
     </div>
 
@@ -55,17 +61,17 @@
         </span>
         <span class="section-hero">
             <p>
-                <span class="small-tag">project_planning</span>
-                <span class="small-tag">troubleshooting</span>
-                <span class="small-tag">firewall_management</span>
-                <span class="small-tag">microsoft_365</span>
-                <span class="small-tag">cabling</span>
-                <span class="small-tag">desktop_support</span>
-                <span class="small-tag">microsoft_server</span>
-                <span class="small-tag">network_design</span>
-                <span class="small-tag">server_management</span>
-                <span class="small-tag">visio</span>
-                <span class="small-tag">exchange_email</span>
+                <span class="hero-tag">project_planning</span>
+                <span class="hero-tag">troubleshooting</span>
+                <span class="hero-tag">firewall_management</span>
+                <span class="hero-tag">microsoft_365</span>
+                <span class="hero-tag">cabling</span>
+                <span class="hero-tag">desktop_support</span>
+                <span class="hero-tag">microsoft_server</span>
+                <span class="hero-tag">network_design</span>
+                <span class="hero-tag">server_management</span>
+                <span class="hero-tag">visio</span>
+                <span class="hero-tag">exchange_email</span>
             </p>
         </span>
     </div>
@@ -75,5 +81,6 @@
 
     <script src="header.js"></script>
     <script src="projects.js"></script>
+    <script src="scrolling.js"></script>
 </body>
 </html>
