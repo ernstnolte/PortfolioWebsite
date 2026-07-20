@@ -1,5 +1,5 @@
 // get header template from header.html
-fetch('header.html')
+fetch('./templates/header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('header-container').innerHTML = data;

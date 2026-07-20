@@ -1,7 +1,7 @@
 // populates the projects-container with entries in projects.json
 
 // get projects from projects.json
-fetch('projects.json')
+fetch('./projects.json')
     .then(response => response.json())
     .then(projects => {
         const container = document.getElementById('projects-container');
