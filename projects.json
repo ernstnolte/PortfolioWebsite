@@ -7,11 +7,18 @@
         "link": "https://github.com/ernstnolte/AssetLocationManager"
     },
     {
-        "name": "CMPG223 Group Project",
+        "name": "Animal Shelter Management System",
         "tags": ["C#", "WinForms", "SQL", "SQLServer"],
         "year": 2025,
-        "coverImage": "images/paws.jpeg",
+        "coverImage": "images/paws.png",
         "link": "https://github.com/ernstnolte/GroupProject-CMPG223-Group40"
+    },
+    {
+        "name": "Study Sources (early stage dev)",
+        "tags": ["Python", "Django", "Web App", "SQL"],
+        "year": 2026,
+        "coverImage": "images/studySources.png",
+        "link": "https://github.com/ernstnolte/StudySources"
     },
     {
         "name": "Router Simulator",
